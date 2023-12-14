@@ -5,4 +5,9 @@
 <script script>
 </script>
 
-<style scoped></style>
+<style>
+body {
+  font-family: Times, serif;
+}
+
+</style>
