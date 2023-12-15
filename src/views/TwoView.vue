@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import Two from '../components/Two.vue';
+import Two from '../components/Two/Index.vue';
 </script>
