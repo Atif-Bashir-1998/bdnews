@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import Three from '../components/Three.vue';
+import Three from '../components/Three/Index.vue';
 </script>
