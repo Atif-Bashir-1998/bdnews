@@ -4,6 +4,5 @@
     <router-link to="/two">Two</router-link>
     <router-link to="/three">Three</router-link>
     <router-link to="/four">Four</router-link>
-    <router-link to="/five">Five</router-link>
   </div>
 </template>

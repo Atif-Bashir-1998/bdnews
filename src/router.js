@@ -27,11 +27,6 @@ const routes = [
     name: 'four',
     component: () => import('./views/FourView.vue')
   },
-  {
-    path: '/five',
-    name: 'five',
-    component: () => import('./views/FiveView.vue')
-  }
 ]
 
 const router = createRouter({
