@@ -1,9 +1,9 @@
 <template>
-  <div class="grid md:grid-cols-5 md:gap-8 p-2 md:py-28 md:px-48">
+  <div class="grid md:grid-cols-5 md:gap-8 p-2 md:py-28 xl:px-48">
     <div class="md:col-span-3 border-r-2 pr-4">
       <Headline :title="headlineSnippet.title" :description="headlineSnippet.description" :image="headlineSnippet.image" />
     </div>
-    <div class="col-span-1 grid md:grid-cols-2 gap-4 items-start">
+    <div class="md:col-span-2 grid md:grid-cols-2 gap-4 items-start">
       <BusinessSnippet v-for="(news, index) in snippets" :key="index" :title="news.title" :image="news.image" />
     </div>
   </div>
