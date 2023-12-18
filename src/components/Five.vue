@@ -5,7 +5,7 @@
         <SwiperSlide v-for="news in spotlightNews"  class="mb-12">
           <div class="flex flex-col justify-between h-full">
             <img class="h-full w-full" :src="news.image" />
-            <p class="font-bold text-lg">{{ news.title }}</p>
+            <a :href="news.url" class="font-bold text-lg hover:text-red-600">{{ news.title }}</a>
           </div>
         </SwiperSlide>
       </Swiper>
@@ -15,7 +15,7 @@
         <SwiperSlide v-for="news in spotlightNews"  class="mb-12">
           <div class="flex flex-col justify-between h-full">
             <img class="h-full w-full" :src="news.image" />
-            <p class="font-bold text-lg">{{ news.title }}</p>
+            <a :href="news.url" class="font-bold text-lg hover:text-red-600">{{ news.title }}</a>
           </div>
         </SwiperSlide>
       </Swiper>
@@ -38,30 +38,37 @@ const spotlightNews = ref([
   {
     image: "https://cdn.wallpapersafari.com/67/82/U76fMj.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/'
   },
   {
     image: "https://i.pinimg.com/originals/09/6a/35/096a35453660aa9b83ba4ab6d9182d61.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/'
   },
   {
     image: "https://wallpapers.com/images/hd/blue-aesthetic-moon-df8850p673zj275y.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/'
   },
   {
     image: "https://wallpapers.com/images/hd/1920x1080-aesthetic-11zwee5mu1ol66fp.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/'
   },
   {
     image: "https://i.pinimg.com/originals/5c/15/6f/5c156fca5df8bdfcb66e7f7c319a5384.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/'
   },
   {
     image: "https://wallpapercave.com/wp/wp2818490.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/'
   },
   {
     image: "https://i.redd.it/o3frxgu8h6191.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/'
   },
 ])
 

@@ -7,7 +7,7 @@
             <img class="" :src="news.image" />
 
             <div class="flex flex-col gap-4 w-full h-full justify-center md:px-16">
-              <p class="font-bold text-2xl">{{ news.title }}</p>
+              <a :href="news.url" class="font-bold text-2xl hover:text-red-600">{{ news.title }}</a>
 
               <p class="text-gray-700">{{ news.description }}</p>
             </div>
@@ -22,7 +22,7 @@
             <img class="" :src="news.image" />
 
             <div class="flex flex-col gap-4 w-full h-full justify-center md:px-16 pb-4">
-              <p class="font-bold text-2xl">{{ news.title }}</p>
+              <a :href="news.url" class="font-bold text-2xl hover:text-red-600">{{ news.title }}</a>
 
               <p class="text-gray-700">{{ news.description }}</p>
             </div>
@@ -48,36 +48,43 @@ const spotlightNews = ref([
   {
     image: "https://cdn.wallpapersafari.com/67/82/U76fMj.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/',
     description: "A teenager from Britain who disappeared six years ago has been found in southern France, fleeing a spiritualist mountain community"
   },
   {
     image: "https://i.pinimg.com/originals/09/6a/35/096a35453660aa9b83ba4ab6d9182d61.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/',
     description: "A teenager from Britain who disappeared six years ago has been found in southern France, fleeing a spiritualist mountain community"
   },
   {
     image: "https://wallpapers.com/images/hd/blue-aesthetic-moon-df8850p673zj275y.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/',
     description: "A teenager from Britain who disappeared six years ago has been found in southern France, fleeing a spiritualist mountain community"
   },
   {
     image: "https://wallpapers.com/images/hd/1920x1080-aesthetic-11zwee5mu1ol66fp.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/',
     description: "A teenager from Britain who disappeared six years ago has been found in southern France, fleeing a spiritualist mountain community"
   },
   {
     image: "https://i.pinimg.com/originals/5c/15/6f/5c156fca5df8bdfcb66e7f7c319a5384.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/',
     description: "A teenager from Britain who disappeared six years ago has been found in southern France, fleeing a spiritualist mountain community"
   },
   {
     image: "https://wallpapercave.com/wp/wp2818490.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/',
     description: "A teenager from Britain who disappeared six years ago has been found in southern France, fleeing a spiritualist mountain community"
   },
   {
     image: "https://i.redd.it/o3frxgu8h6191.jpg",
     title: "France has found British boy missing since 2017",
+    url: 'https://www.google.com/',
     description: "A teenager from Britain who disappeared six years ago has been found in southern France, fleeing a spiritualist mountain community"
   },
 ])

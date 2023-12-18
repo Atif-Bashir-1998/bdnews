@@ -1,6 +1,6 @@
 <template>
   <div class="border-b-2 pb-4">
-    <p class="font-bold text-xl hover:text-red-600 cursor-pointer mb-2">{{ title }}</p>
+    <a :href="url" class="font-bold text-xl hover:text-red-600 cursor-pointer mb-2">{{ title }}</a>
 
     <p class="text-gray-700 hidden md:block">{{ description }}</p>
   </div>
@@ -15,6 +15,10 @@ defineProps({
   description: {
     type: String,
     required: true
+  },
+  url: {
+    type: String,
+    required: true,
   }
 })
 </script>

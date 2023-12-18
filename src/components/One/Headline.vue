@@ -2,7 +2,7 @@
   <div>
     <img :src="image" class="h-96 mb-4" />
 
-    <a class="font-bold text-2xl mb-2" :href="url">{{ title }}</a>
+    <a class="font-bold text-2xl mb-2 hover:text-red-500" :href="url">{{ title }}</a>
     <p class="text-gray-700 hidden md:block">{{ description }}</p>
   </div>
 </template>

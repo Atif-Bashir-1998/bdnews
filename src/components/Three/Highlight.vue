@@ -3,7 +3,7 @@
     <div class="absolute inset-0 bg-black opacity-20"></div>
     <div class="inset-0 flex-col justify-end p-6 hidden md:absolute md:flex">
       <p>{{ meta.sport }}</p>
-      <h2 class="text-3xl font-bold mb-2 hover:text-red-600 cursor-pointer">{{ title }}</h2>
+      <a :href="url" class="text-3xl font-bold mb-2 hover:text-red-600 cursor-pointer">{{ title }}</a>
       <div class="flex items-center space-x-4">
         <p>{{ meta.source }}</p>
         <p> • </p>
@@ -34,6 +34,10 @@ defineProps({
     type: Object,
     required: true,
   },
+  url: {
+    type: String,
+    required: true
+  }
 });
 </script>
 

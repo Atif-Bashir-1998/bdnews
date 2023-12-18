@@ -1,6 +1,6 @@
 <template>
   <div class="md:gap-8 p-2 md:py-28 lg:px-48">
-    <Highlight :title="selectedHighlight.title" :description="selectedHighlight.description" :image="selectedHighlight.image" :meta="selectedHighlight.meta" />
+    <Highlight :title="selectedHighlight.title" :description="selectedHighlight.description" :image="selectedHighlight.image" :meta="selectedHighlight.meta" :url="selectedHighlight.url" />
 
     <div id="highlights-section" class="overflow-x-scroll">
       <div class="flex min-w-fit overflow-x-auto h-24">
@@ -20,6 +20,7 @@ import { computed, ref } from 'vue';
 const highlights = ref([
   {
     title: 'Pakistan look to be positive against Australia team',
+    url: 'https://www.google.com/',
     description: 'Pakistan captain Shan Masood said there was no question of playing for anything less than a win at Perth Stadium',
     meta: {
       read_time: '2 min read',
@@ -31,6 +32,7 @@ const highlights = ref([
   },
   {
     title: 'Pakistan look to be positive against Australia team',
+    url: 'https://www.google.com/',
     description: 'FIFA chief hails access for women to Iran stadium as sign of progress',
     meta: {
       read_time: '2 min read',
@@ -42,6 +44,7 @@ const highlights = ref([
   },
   {
     title: 'Pakistan look to be positive against Australia team',
+    url: 'https://www.google.com/',
     description: 'Pakistan captain Shan Masood said there was no question of playing for anything less than a win at Perth Stadium',
     meta: {
       read_time: '2 min read',
@@ -53,6 +56,7 @@ const highlights = ref([
   },
   {
     title: 'FIFA chief hails access for women to Iran',
+    url: 'https://www.google.com/',
     description: 'FIFA chief hails access for women to Iran stadium as sign of progress',
     meta: {
       read_time: '2 min read',
@@ -64,28 +68,7 @@ const highlights = ref([
   },
   {
     title: 'Pakistan look to be positive against Australia team',
-    description: 'Pakistan captain Shan Masood said there was no question of playing for anything less than a win at Perth Stadium',
-    meta: {
-      read_time: '2 min read',
-      posted: '2 hours ago',
-      source: 'Reuters',
-      sport: 'Cricket'
-    },
-    image: 'https://png.pngtree.com/background/20230522/original/pngtree-nfl-football-player-wallpaper-picture-image_2695597.jpg'
-  },
-  {
-    title: 'FIFA chief hails access for women to Iran',
-    description: 'FIFA chief hails access for women to Iran stadium as sign of progress',
-    meta: {
-      read_time: '2 min read',
-      posted: '2 hours ago',
-      source: 'Reuters',
-      sport: 'Cricket'
-    },
-    image: 'https://resources.pulse.icc-cricket.com/ICC/photo/2022/12/06/6aa585fd-4655-4f66-84f5-689e326df386/Haris-Ruaf.jpg'
-  },
-  {
-    title: 'Pakistan look to be positive against Australia team',
+    url: 'https://www.google.com/',
     description: 'Pakistan captain Shan Masood said there was no question of playing for anything less than a win at Perth Stadium',
     meta: {
       read_time: '2 min read',
@@ -97,6 +80,7 @@ const highlights = ref([
   },
   {
     title: 'FIFA chief hails access for women to Iran',
+    url: 'https://www.google.com/',
     description: 'FIFA chief hails access for women to Iran stadium as sign of progress',
     meta: {
       read_time: '2 min read',
@@ -108,6 +92,31 @@ const highlights = ref([
   },
   {
     title: 'Pakistan look to be positive against Australia team',
+    url: 'https://www.google.com/',
+    description: 'Pakistan captain Shan Masood said there was no question of playing for anything less than a win at Perth Stadium',
+    meta: {
+      read_time: '2 min read',
+      posted: '2 hours ago',
+      source: 'Reuters',
+      sport: 'Cricket'
+    },
+    image: 'https://png.pngtree.com/background/20230522/original/pngtree-nfl-football-player-wallpaper-picture-image_2695597.jpg'
+  },
+  {
+    title: 'FIFA chief hails access for women to Iran',
+    url: 'https://www.google.com/',
+    description: 'FIFA chief hails access for women to Iran stadium as sign of progress',
+    meta: {
+      read_time: '2 min read',
+      posted: '2 hours ago',
+      source: 'Reuters',
+      sport: 'Cricket'
+    },
+    image: 'https://resources.pulse.icc-cricket.com/ICC/photo/2022/12/06/6aa585fd-4655-4f66-84f5-689e326df386/Haris-Ruaf.jpg'
+  },
+  {
+    title: 'Pakistan look to be positive against Australia team',
+    url: 'https://www.google.com/',
     description: 'FIFA chief hails access for women to Iran stadium as sign of progress',
     meta: {
       read_time: '2 min read',
@@ -119,6 +128,7 @@ const highlights = ref([
   },
   {
     title: 'FIFA chief hails access for women to Iran',
+    url: 'https://www.google.com/',
     description: 'FIFA chief hails access for women to Iran stadium as sign of progress',
     meta: {
       read_time: '2 min read',

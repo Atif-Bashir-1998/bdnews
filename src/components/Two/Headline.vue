@@ -2,7 +2,7 @@
   <div>
     <img :src="image" class="h-96 mb-4" />
 
-    <p class="font-bold text-2xl mb-2">{{ title }}</p>
+    <a :href="url" class="font-bold text-2xl mb-2 hover:text-red-600">{{ title }}</a>
     <p class="text-gray-700">{{ description }}</p>
   </div>
 </template>
@@ -18,6 +18,10 @@ defineProps({
     required: true
   },
   image: {
+    type: String,
+    required: true,
+  },
+  url: {
     type: String,
     required: true,
   }
