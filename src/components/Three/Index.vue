@@ -1,5 +1,5 @@
 <template>
-  <div class="md:gap-8 p-2 md:py-28 md:px-48">
+  <div class="md:gap-8 p-2 md:py-28 lg:px-48">
     <Highlight :title="selectedHighlight.title" :description="selectedHighlight.description" :image="selectedHighlight.image" :meta="selectedHighlight.meta" />
 
     <div id="highlights-section" class="overflow-x-scroll">
