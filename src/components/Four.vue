@@ -1,18 +1,35 @@
 <template>
-  <div class="px-4 md:px-64 py-16 mt-16 bg-gray-100">
-    <Swiper :modules="modules" :navigation="true" :pagination="pagination" class="h-96">
-      <SwiperSlide v-for="news in spotlightNews">
-        <div class="h-full grid md:grid-cols-2 border-2">
-          <img class="" :src="news.image" />
+  <div class="px-4 xl:px-32 py-8 mt-16 bg-gray-100">
+    <div class="hidden md:block">
+      <Swiper :modules="modules" :navigation="true" :pagination="pagination">
+        <SwiperSlide v-for="news in spotlightNews">
+          <div class="h-full grid md:grid-cols-2 border-2">
+            <img class="" :src="news.image" />
 
-          <div class="flex flex-col gap-4 w-full h-full justify-center md:px-16">
-            <p class="font-bold text-2xl">{{ news.title }}</p>
+            <div class="flex flex-col gap-4 w-full h-full justify-center md:px-16">
+              <p class="font-bold text-2xl">{{ news.title }}</p>
 
-            <p class="text-gray-700">{{ news.description }}</p>
+              <p class="text-gray-700">{{ news.description }}</p>
+            </div>
           </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+    <div class="block md:hidden">
+      <Swiper :modules="modules" :pagination="pagination">
+        <SwiperSlide v-for="news in spotlightNews">
+          <div class="h-full grid md:grid-cols-2 border-2 mb-8">
+            <img class="" :src="news.image" />
+
+            <div class="flex flex-col gap-4 w-full h-full justify-center md:px-16 pb-4">
+              <p class="font-bold text-2xl">{{ news.title }}</p>
+
+              <p class="text-gray-700">{{ news.description }}</p>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
   </div>
 </template>
 
